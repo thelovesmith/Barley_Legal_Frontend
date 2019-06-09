@@ -16,6 +16,11 @@ import { withRouter } from "react-router";
     }
   }
 
+
+  componentDidMount(){
+    console.log('mounted');
+    console.log(this.state, "state");
+  }
   componentDidUpdate(){
     if(this.state.userId){
       const userId = JSON.stringify(this.state.userId)
